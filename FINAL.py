@@ -13,7 +13,7 @@ import stt
 import remain
 import TextToInteger
 import text_to_speech
-import CtoPython
+import Eliza_Algo
 
 def working1(event):
     while(True):
@@ -22,7 +22,7 @@ def working1(event):
         if (text1.upper() == "BYE ") or (text1.upper() == "QUIT ") or (text1.upper() == "BYE") or (text1.upper() =="QUIT"):
             break
         else:
-            text2 = CtoPython.Heart(text1)
+            text2 = Eliza_Algo.Heart(text1)
             print("BOT: "+text2)
             text_to_speech.TextToSpeech(text2, 2)
  
@@ -34,7 +34,7 @@ def working2(event):
         if (text1.upper() == "BYE ") or (text1.upper() == "QUIT ") or (text1.upper() == "BYE") or (text1.upper() =="QUIT"):
             break
         else:
-            text2 = CtoPython.Heart(text1)
+            text2 = Eliza_Algo.Heart(text1)
             print "BOT: "+text2
             text_to_speech.TextToSpeech(text2, 1)
 """
